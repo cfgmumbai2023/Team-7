@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from 'react-scroll';
+import logo from '../assets/RKSS_Logo.png';
 
 const Navbar = () => {
 
@@ -29,15 +30,15 @@ const Navbar = () => {
     ];
 
   return (
-    <div className='h-16 flex mx-auto pl-10 items-center w-full md:h-20 text-white fixed px-4 bg-black z-50'>
+    <div className='h-16 flex justify-between mx-auto pl-[250px] pr-[250px] items-center w-full md:h-[80px] border-b-2 text-white fixed px-4 bg-white z-50'>
       <div className='text-4xl text-red-500'>
-        VLearn
+        <img src = {logo} alt = "RKSS Logo" target="_blank" className='w-1/4 sm:w-[60px]'/>
       </div>
 
-      <ul className='hidden md:flex gap-3 md:pl-[800px]'>
+      <ul className='hidden md:flex gap-3'>
 
         {links.map(({id, link}) => (
-          <li key={id} className='flex justify-end w-full h-full text-xl cursor-pointer capitalize px-6 p-2 text-[#f3e7e7] hover:text-[#d53b3b]  hover:scale-110'>
+          <li key={id} className='flex justify-end w-full h-full text-xl cursor-pointer capitalize px-6 p-2 text-[#000000] hover:text-[#c00000]  hover:scale-110'>
             <Link to={link} smooth duration={500}>
               {link}
             </Link>
@@ -45,7 +46,7 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div className='text-xl cursor-pointer capitalize px-6 p-2 text-[#f3e7e7] hover:text-[#d53b3b]  hover:scale-110'>
+      <div className='text-xl cursor-pointer capitalize px-6 p-2 rounded-full text-[#ffffff] bg-[#c00000] hover:bg-[#4b4747]'>
         <a href="https://www.github.com/himanshu-03">
           <button>
             Login
