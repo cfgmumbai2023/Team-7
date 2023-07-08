@@ -19,13 +19,8 @@ const Navbar = () => {
 
         },
         {
-            id:3,
-            link:"donate",
-
-        },
-        {
             id:4,
-            link:"achievements",
+            link:"Contribute",
         },
     ];
 
