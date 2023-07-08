@@ -89,7 +89,7 @@ const SingupPage = () => {
           </select>
         </div>
         <div className='p-3 align-items justify-center pl-[190px] pr-[190px] flex flex-col w-full mx-auto md:flex-row'>
-          <button type="submit" className='mt-5 text-center flex flex-col mx-auto p-2 px-4 rounded-md text-[white] bg-[#ff0d0d] hover:text-[white] hover:bg-[#c00000]'>Submit</button>
+          <button type="submit" className='mt-5 text-center flex flex-col mx-auto p-2 px-4 rounded-md text-[white] bg-[#ff0d0d] hover:text-[white] hover:bg-[#c00000]'>Sign Up</button>
         </div>
         </form>
       </div>
