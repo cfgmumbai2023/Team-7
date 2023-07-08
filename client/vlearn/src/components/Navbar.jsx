@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from 'react-scroll';
 import logo from '../assets/RKSS_Logo.png';
-
+import {useNavigate} from 'react-router-dom'
 const Navbar = () => {
 
   const [nav, setNav] = useState(false);
@@ -23,11 +23,28 @@ const Navbar = () => {
             link:"Contribute",
         },
     ];
+    const  navigate= useNavigate();
+
+    const routeToSignUp=()=>{
+      let path = `/signup`;
+      navigate(path)
+    }
+
+    const routeToLogin=()=>{
+      let path = `/login`;
+      navigate(path)
+    }
+
+    const routeToHomepage=()=>{
+      let path = `/`;
+      navigate(path)
+    }
 
   return (
     <div className='h-16 flex justify-between mx-auto pl-[250px] pr-[250px] items-center w-full md:h-[80px] border-b-2 text-white fixed px-4 bg-white z-50'>
-      <div className='text-4xl text-red-500'>
+      <div className='flex flex-row text-4xl text-red-500' onClick={routeToHomepage}>
         <img src = {logo} alt = "RKSS Logo" target="_blank" className='w-1/4 sm:w-[60px]'/>
+        <p className='pt-2 pl-3'>Vlearn</p>
       </div>
 
       <ul className='hidden md:flex gap-3'>
@@ -40,14 +57,16 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-
-      <div className='text-xl cursor-pointer capitalize px-6 p-2 rounded-full text-[#ffffff] bg-[red] hover:bg-[#c00000]'>
-        <a href="https://www.github.com/himanshu-03">
-          <button>
-            Login
-          </button>
-        </a>
+      <div className="flex justify-between flex-row gap-5">
+        <div className='text-xl cursor-pointer capitalize px-6 p-2 rounded-full text-[#ffffff] bg-[red] hover:bg-[#c00000]' onClick={routeToLogin}>
+              Login
+        </div>
+        <div className='text-xl cursor-pointer capitalize px-6 p-2 rounded-full text-[#ffffff] bg-[blue] hover:bg-[#2326cf]' onClick={routeToSignUp}>
+              Register
+        </div>
       </div>
+
+      
 
       <div onClick={()=> setNav(!nav)} className='cursor-pointer text-gray-400 pr-3 z-50 md:hidden'>
         {

@@ -1,4 +1,6 @@
-import React, { useState } from 'react' 
+import React, { useState } from 'react';
+import Navbar from './Navbar';
+import Socials from './Socials';
 
 const Homepage = () => {
   const [textInput, setTextInput] = useState('');
@@ -35,6 +37,8 @@ const Homepage = () => {
       style = {{
         background: "linear-gradient(0deg, hsla(0, 85%, 56%, 1) 0%, hsla(0, 0%, 0%, 1) 80%)"
       }}>
+      <Navbar/>
+      <Socials />
       <div className='max-w-screen-lg align-items justify-center flex flex-col font-bold mx-auto rounded-[40px] my-auto h-[400px] w-[700px] text-black' 
         style = {{  
           background: "rgba(255, 255, 255, 1)"
@@ -81,8 +85,8 @@ const Homepage = () => {
           </select>
         </div>
         <div className='p-5 align-items justify-center pl-[190px] pr-[190px] flex flex-col w-full mx-auto md:flex-row'>
-          <button type="submit" className='mt-5 text-center flex flex-col mx-auto p-2 px-4 rounded-md text-[white] bg-[#ff0d0d] hover:text-[white] hover:bg-[#c00000]'>Submit</button>
-          <button onClick={handleResetClick} className='mt-5 text-center flex flex-col mx-auto p-2 px-4 rounded-md text-[white] bg-[#003cff] hover:text-[white] hover:bg-[#2326cf]'>Reset</button>
+            <button type="submit" className='mt-5 text-center flex flex-col mx-auto p-2 px-4 rounded-md text-[white] bg-[#ff0d0d] hover:text-[white] hover:bg-[#c00000]'>Submit</button>
+            <button onClick={handleResetClick} className='mt-5 text-center flex flex-col mx-auto p-2 px-4 rounded-md text-[white] bg-[#003cff] hover:text-[white] hover:bg-[#2326cf]'>Reset</button>
         </div>
         </form>
       </div>
