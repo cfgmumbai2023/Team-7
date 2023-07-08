@@ -46,7 +46,7 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div className='text-xl cursor-pointer capitalize px-6 p-2 rounded-full text-[#ffffff] bg-[#c00000] hover:bg-[#4b4747]'>
+      <div className='text-xl cursor-pointer capitalize px-6 p-2 rounded-full text-[#ffffff] bg-[red] hover:bg-[#c00000]'>
         <a href="https://www.github.com/himanshu-03">
           <button>
             Login
