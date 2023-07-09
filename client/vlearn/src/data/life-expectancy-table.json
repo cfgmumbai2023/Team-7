@@ -1,0 +1,322 @@
+[
+    {
+      "Year": "1950",
+      "Country": "Grade 1-4",
+      "Income": 1809
+    },
+    {
+      "Year": "1951",
+      "Country": "Grade 1-4",
+      "Income": 2000
+    },
+    {
+      "Year": "1952",
+      "Country": "Grade 1-4",
+      "Income": 1844
+    },
+    {
+      "Year": "1953",
+      "Country": "Grade 1-4",
+      "Income": 1750
+    },
+    {
+      "Year": "1954",
+      "Country": "Grade 1-4",
+      "Income": 2000
+    },
+    {
+      "Year": "1955",
+      "Country": "Grade 1-4",
+      "Income": 2250
+    },
+    {
+      "Year": "1956",
+      "Country": "Grade 1-4",
+      "Income": 2400
+    },
+    {
+      "Year": "1957",
+      "Country": "Grade 1-4",
+      "Income": 2700
+    },
+    {
+      "Year": "1958",
+      "Country": "Grade 1-4",
+      "Income": 2200
+    },
+    {
+      "Year": "1959",
+      "Country": "Grade 1-4",
+      "Income": 2600
+    },
+    {
+      "Year": "1960",
+      "Country": "Grade 1-4",
+      "Income": 2300
+    },
+    {
+      "Year": "1961",
+      "Country": "Grade 1-4",
+      "Income": 2500
+    },
+    {
+      "Year": "1962",
+      "Country": "Grade 1-4",
+      "Income": 2800
+    },
+    {
+      "Year": "1963",
+      "Country": "Grade 1-4",
+      "Income": 2900
+    },
+    {
+      "Year": "1964",
+      "Country": "Grade 1-4",
+      "Income": 3200
+    },
+    {
+      "Year": "1965",
+      "Country": "Grade 1-4",
+      "Income": 3600
+    },
+    {
+      "Year": "1966",
+      "Country": "Grade 1-4",
+      "Income": 3000
+    },
+    {
+      "Year": "1967",
+      "Country": "Grade 1-4",
+      "Income": 3100
+    },
+    {
+      "Year": "1968",
+      "Country": "Grade 1-4",
+      "Income": 3400
+    },
+    {
+      "Year": "1969",
+      "Country": "Grade 1-4",
+      "Income": 3700
+    },
+    {
+      "Year": "1970",
+      "Country": "Grade 1-4",
+      "Income": 4000
+    },
+    {
+      "Year": "1950",
+      "Country": "France",
+      "Income": 3159
+    },
+    {
+      "Year": "1951",
+      "Country": "France",
+      "Income": 2800
+    },
+    {
+      "Year": "1952",
+      "Country": "France",
+      "Income": 3900
+    },
+    {
+      "Year": "1953",
+      "Country": "France",
+      "Income": 3200
+    },
+    {
+      "Year": "1954",
+      "Country": "France",
+      "Income": 3500
+    },
+    {
+      "Year": "1955",
+      "Country": "France",
+      "Income": 4100
+    },
+    {
+      "Year": "1956",
+      "Country": "France",
+      "Income": 3800
+    },
+    {
+      "Year": "1957",
+      "Country": "France",
+      "Income": 4200
+    },
+    {
+      "Year": "1958",
+      "Country": "France",
+      "Income": 3900
+    },
+    {
+      "Year": "1959",
+      "Country": "France",
+      "Income": 4500
+    },
+    {
+      "Year": "1960",
+      "Country": "France",
+      "Income": 4200
+    },
+    {
+      "Year": "1961",
+      "Country": "France",
+      "Income": 4600
+    },
+    {
+      "Year": "1962",
+      "Country": "France",
+      "Income": 5000
+    },
+    {
+      "Year": "1963",
+      "Country": "France",
+      "Income": 4800
+    },
+    {
+      "Year": "1964",
+      "Country": "France",
+      "Income": 5300
+    },
+    {
+      "Year": "1965",
+      "Country": "France",
+      "Income": 5800
+    },
+    {
+      "Year": "1966",
+      "Country": "France",
+      "Income": 5500
+    },
+    {
+      "Year": "1967",
+      "Country": "France",
+      "Income": 5900
+    },
+    {
+      "Year": "1968",
+      "Country": "France",
+      "Income":6000
+    },
+    {
+      "Year": "1968",
+      "Country": "France",
+      "Income": 5300
+    },
+    {
+      "Year": "1969",
+      "Country": "France",
+      "Income": 5700
+    },
+    {
+      "Year": "1970",
+      "Country": "France",
+      "Income": 6000
+    },
+    {
+      "Year": "1950",
+      "Country": "Germany",
+      "Income": 2319
+    },
+    {
+      "Year": "1951",
+      "Country": "Germany",
+      "Income": 2500
+    },
+    {
+      "Year": "1952",
+      "Country": "Germany",
+      "Income": 2728
+    },
+    {
+      "Year": "1953",
+      "Country": "Germany",
+      "Income": 2400
+    },
+    {
+      "Year": "1954",
+      "Country": "Germany",
+      "Income": 2600
+    },
+    {
+      "Year": "1955",
+      "Country": "Germany",
+      "Income": 2900
+    },
+    {
+      "Year": "1956",
+      "Country": "Germany",
+      "Income": 2700
+    },
+    {
+      "Year": "1957",
+      "Country": "Germany",
+      "Income": 3100
+    },
+    {
+      "Year": "1958",
+      "Country": "Germany",
+      "Income": 2800
+    },
+    {
+      "Year": "1959",
+      "Country": "Germany",
+      "Income": 3300
+    },
+    {
+      "Year": "1960",
+      "Country": "Germany",
+      "Income": 3000
+    },
+    {
+      "Year": "1961",
+      "Country": "Germany",
+      "Income": 3400
+    },
+    {
+      "Year": "1962",
+      "Country": "Germany",
+      "Income": 3800
+    },
+    {
+      "Year": "1963",
+      "Country": "Germany",
+      "Income": 3600
+    },
+    {
+      "Year": "1964",
+      "Country": "Germany",
+      "Income": 4000
+    },
+    {
+      "Year": "1965",
+      "Country": "Germany",
+      "Income": 4300
+    },
+    {
+      "Year": "1966",
+      "Country": "Germany",
+      "Income": 4100
+    },
+    {
+      "Year": "1967",
+      "Country": "Germany",
+      "Income": 4500
+    },
+    {
+      "Year": "1968",
+      "Country": "Germany",
+      "Income": 4800
+    },
+    {
+      "Year": "1969",
+      "Country": "Germany",
+      "Income": 5200
+    },
+    {
+      "Year": "1970",
+      "Country": "Germany",
+      "Income": 5500
+    }
+  ]
