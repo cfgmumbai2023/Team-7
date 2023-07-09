@@ -22,16 +22,25 @@ app.post('/api/endpoint', (req, res) => {
 
   res.sendStatus(200); // Send a response back to the client
 });
-console.log(query);
+// const querystring= query;
+// console.log("afasdbfaf", query);
+// console.log("fafa",querystring);
+
 app.get('/api/videos', async (req, res) => {
-    const  querystring = req.query;
+    // const  querystring = req.query;
+    const querystring= query;
+console.log("afasdbfaf", query);
+console.log("fafa",querystring);
     const apiKey = process.env.YOUTUBE_API_KEY; // Replace with your actual YouTube API key
-    console.log("safdasfdac",querystring);
+    console.log("query string",querystring);
     try {
+        console.log(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(querystring)}&key=${apiKey}&type=video`);
       const response = await axios.get(
-        `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(query)}&key=${apiKey}&type=video`
+        `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(querystring)}&key=${apiKey}&type=video`
       );
+      
   
+      console.log(response);
 
     const videoIds = response.data.items.map((item) => item.id.videoId);
 
@@ -71,7 +80,7 @@ app.get('/api/videos', async (req, res) => {
   
 app.get('/api/videos', async (req, res) => {
     const { querystring } = req.query;
-    const apiKey = 'YOUR_API_KEY'; // Replace with your actual YouTube API key
+    const apiKey =process.env.YOUTUBE_API_KEY; // Replace with your actual YouTube API key
   
     try {
       const response = await axios.get(

@@ -4,6 +4,7 @@ import Homepage from './components/Homepage';
 import Login from './components/Login';
 import Signup from "./components/Signup";
 import Footer from "./components/Footer";
+import Search from './components/Search';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path = "/" element={<Homepage/>}/>
         <Route exact path='/login' element={<Login />} />
         <Route exact path='/signup' element={<Signup />} />
+        <Route exact path='/search' element={<Search />} />
       </Routes>
       <Footer />
       

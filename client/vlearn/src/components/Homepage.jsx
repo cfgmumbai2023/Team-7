@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import Navbar from './Navbar';
 import Socials from './Socials';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 const Homepage = () => {
+  const navigate = useNavigate();
   const [textInput, setTextInput] = useState('');
   const [Class, setClass] = useState('');
   const [Language, setLanguage] = useState('');
@@ -50,6 +52,7 @@ const Homepage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    navigate('/search');
     console.log('Text input:', textInput);
     console.log('Dropdown 1 value:', Class);
     console.log('Dropdown 2 value:', Language);
@@ -114,7 +117,7 @@ const Homepage = () => {
           </select>
         </div>
         <div className='p-5 align-items justify-center pl-[190px] pr-[190px] flex flex-col w-full mx-auto md:flex-row'>
-            <button type="submit" className='mt-5 text-center flex flex-col mx-auto p-2 px-4 rounded-md text-[white] bg-[#ff0d0d] hover:text-[white] hover:bg-[#c00000]' onClick={handlOnClick}>Submit</button>
+            <button type="submit" className='mt-5 text-center flex flex-col mx-auto p-2 px-4 rounded-md text-[white] bg-[#ff0d0d] hover:text-[white] hover:bg-[#c00000]' onClick={handlOnClick} href='http://localhost:3000/search'>Submit</button>
             <button onClick={handleResetClick} className='mt-5 text-center flex flex-col mx-auto p-2 px-4 rounded-md text-[white] bg-[#003cff] hover:text-[white] hover:bg-[#2326cf]'>Reset</button>
         </div>
         </form>
