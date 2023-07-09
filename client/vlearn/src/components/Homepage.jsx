@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import Navbar from './Navbar';
 import Socials from './Socials';
-
+import axios from 'axios';
 const Homepage = () => {
   const [textInput, setTextInput] = useState('');
   const [Class, setClass] = useState('');
   const [Language, setLanguage] = useState('');
-
+  const [videoData, setVideoData] = useState([]);
+  const [query, setQuery] = useState('');
   const handleTextInputChange = (e) => {
     setTextInput(e.target.value);
   };
@@ -17,6 +18,34 @@ const Homepage = () => {
 
   const handlelanguageChange = (e) => {
     setLanguage(e.target.value);
+  };
+
+  const handlOnClick = ()=>{
+    sendDataToServer();
+    handleSearch();
+  }
+
+  const sendDataToServer = async () => {
+    try {
+      const data = {
+        class: Class,
+        topic:textInput,
+        language:Language,
+      };
+
+      await axios.post('http://localhost:5000/api/endpoint', data);
+      console.log('Data sent to server successfully');
+    } catch (error) {
+      console.error('Error sending data to server:', error);
+    }
+  };
+  const handleSearch = async () => {
+    try {
+      const response = await axios.get(`http://localhost:5000/api/videos?querystring=${encodeURIComponent(query)}`);
+      setVideoData(response.data);
+    } catch (error) {
+      console.error('Error fetching video data:', error);
+    }
   };
 
   const handleSubmit = (e) => {
@@ -85,7 +114,7 @@ const Homepage = () => {
           </select>
         </div>
         <div className='p-5 align-items justify-center pl-[190px] pr-[190px] flex flex-col w-full mx-auto md:flex-row'>
-            <button type="submit" className='mt-5 text-center flex flex-col mx-auto p-2 px-4 rounded-md text-[white] bg-[#ff0d0d] hover:text-[white] hover:bg-[#c00000]'>Submit</button>
+            <button type="submit" className='mt-5 text-center flex flex-col mx-auto p-2 px-4 rounded-md text-[white] bg-[#ff0d0d] hover:text-[white] hover:bg-[#c00000]' onClick={handlOnClick}>Submit</button>
             <button onClick={handleResetClick} className='mt-5 text-center flex flex-col mx-auto p-2 px-4 rounded-md text-[white] bg-[#003cff] hover:text-[white] hover:bg-[#2326cf]'>Reset</button>
         </div>
         </form>
